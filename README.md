@@ -7,4 +7,6 @@ Programy realizowane w ramach kursu Język Python prowadzonego w semestrze zimow
 **Zestaw 3:** operacje na tekście, input i output, sekwencje, słowniki  
 **Zestaw 4:** funkcje i funkcje rekurencyjne  
 **Zestaw 5:** moduły, testowanie - unittest  
-**Zestaw 6:** klasy, operatory
+**Zestaw 6:** klasy, operatory  
+**Zestaw 7:** wyjątki i iteratory  
+**Zestaw 8:** dekoratory i metaklasy  
