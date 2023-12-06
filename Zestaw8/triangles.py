@@ -39,13 +39,12 @@ class Triangle:
             return False
         if self.pt3 != other.pt1 and self.pt3 != other.pt2 and self.pt3 != other.pt3:
             return False
-        return True
-        
+        return True   
 
-	def __ne__(self, other):
+    def __ne__(self, other):
         return not self == other
 
-	@property
+    @property
     def center(self):
         S = self.pt1 + self.pt2 + self.pt3
         return Point(S.x / 3, S.y / 3)
@@ -98,5 +97,5 @@ class Triangle:
 
     def move(self, x, y):
         M = Point(x, y)
-        return Triangle(self.pt1 + M, self.pt2 + M, self.pt3 + M)
+        return Triangle.from_points([self.pt1 + M, self.pt2 + M, self.pt3 + M])
 

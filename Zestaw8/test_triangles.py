@@ -12,58 +12,58 @@
  
 # !/usr/bin/env/python
 # coding = utf-8
-
 from points import Point
 from triangles import Triangle
-import unittest
+import pytest
 
-class TestTriangle(unittest.TestCase):
-    def setUp(self):
-        self.A = Triangle(0, 0, 5, 2, -1, 4)
+@pytest.fixture
+def triangle():
+    return Triangle(0, 0, 5, 2, -1, 4)
 
-    def testCenter(self):
-        self.assertEqual(self.A.center, Point(1.3333333333333333, 2))
+def test_from_points(triangle):
+    point_list = [Point(0, 0), Point(5, 2), Point(-1, 4)]
+    other_triangle = Triangle.from_points(point_list)
+    assert triangle == other_triangle
 
-    def testFromPoints(self):
-        PointList = [Point(0, 0), Point(5, 2), Point(-1, 4)]
-        B = Triangle.from_points(PointList)
-        self.assertEqual(self.A, B)
+def test_center(triangle):
+    assert triangle.center == Point(1.3333333333333333, 2)
 
-    def testTop(self):
-        self.assertEqual(self.A.top, 4)
+def test_top(triangle):
+    assert triangle.top == 4
 
-    def testLeft(self):
-        self.assertEqual(self.A.left, -1)
+def test_left(triangle):
+    assert triangle.left == -1
 
-    def testBottom(self):
-        self.assertEqual(self.A.bottom, 0)
+def test_bottom(triangle):
+    assert triangle.bottom == 0
 
-    def testRight(self):
-        self.assertEqual(self.A.right, 5)
+def test_right(triangle):
+    assert triangle.right == 5
 
-    def testWidth(self):
-        self.assertEqual(self.A.width, 6)
+def test_width(triangle):
+    assert triangle.width == 6
 
-    def testHeight(self):
-        self.assertEqual(self.A.height, 4)
+def test_height(triangle):
+    assert triangle.height == 4
 
-    def testTopLeft(self):
-        self.assertEqual(self.A.topleft, Point(-1, 4))
+def test_topleft(triangle):
+    assert triangle.topleft == Point(-1, 4)
 
-    def testBottomLeft(self):
-        self.assertEqual(self.A.bottomleft, Point(-1, 0))
+def test_bottomleft(triangle):
+    assert triangle.bottomleft == Point(-1, 0)
 
-    def testTopRight(self):
-        self.assertEqual(self.A.topright, Point(5, 4))
+def test_topright(triangle):
+    assert triangle.topright == Point(5, 4)
 
-    def testBottomRight(self):
-        self.assertEqual(self.A.bottomright, Point(5, 0))
+def test_bottomright(triangle):
+    assert triangle.bottomright == Point(5, 0)
 
-    def testArea(self):
-        self.assertEqual(self.A.area(), 10.0)
+def test_area(triangle):
+    assert triangle.area() == 11.0
 
-    def tearDown(self):
-        pass
+def test_move(triangle):
+    moved_triangle = triangle.move(1, 1)
+    assert moved_triangle == Triangle(1, 1, 6, 3, 0, 5)
 
 if __name__ == '__main__':
-    unittest.main()
+    pytest.main()
