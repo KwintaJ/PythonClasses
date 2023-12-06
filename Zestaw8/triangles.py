@@ -42,12 +42,53 @@ class Triangle:
         return True
         
 
-    def __ne__(self, other):
+	def __ne__(self, other):
         return not self == other
 
+	@property
     def center(self):
         S = self.pt1 + self.pt2 + self.pt3
         return Point(S.x / 3, S.y / 3)
+        
+    @property
+    def top(self):
+        return max(self.pt1.y, self.pt2.y, self.pt3.y)
+
+    @property
+    def left(self):
+        return min(self.pt1.x, self.pt2.x, self.pt3.x)
+
+    @property
+    def bottom(self):
+        return min(self.pt1.y, self.pt2.y, self.pt3.y)
+
+    @property
+    def right(self):
+        return max(self.pt1.x, self.pt2.x, self.pt3.x)
+
+    @property
+    def width(self):
+        return self.right - self.left
+
+    @property
+    def height(self):
+        return self.top - self.bottom
+
+    @property
+    def topleft(self):
+        return Point(self.left, self.top)
+
+    @property
+    def bottomleft(self):
+        return Point(self.left, self.bottom)
+
+    @property
+    def topright(self):
+        return Point(self.right, self.top)
+
+    @property
+    def bottomright(self):
+        return Point(self.right, self.bottom)
 
     def area(self):
         a = (self.pt2 - self.pt1).length()
