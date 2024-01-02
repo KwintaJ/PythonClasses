@@ -28,6 +28,14 @@ class SingleList:
         self.length = 0 
         self.head = None
         self.tail = None
+        
+    def __str__(self):
+        current = self.head
+        elements = []
+        while current:
+            elements.append(str(current))
+            current = current.next
+        return "->".join(elements)
 
     def is_empty(self):
         return self.head is None
