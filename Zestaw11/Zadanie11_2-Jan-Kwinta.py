@@ -13,36 +13,41 @@
 # !/usr/bin/env/python
 # coding = utf-8
 from SingleLists import SingleList, Node
+import unittest
 
-# Tworzenie listy
-my_list = SingleList()
+class TestSingleList(unittest.TestCase):
+    def setUp(self):
+        self.my_list = SingleList()
+        self.node1 = Node(22)
+        self.my_list.insert_head(self.node1)
+        self.my_list.insert_head(Node(1))
+        self.my_list.insert_head(Node(3))
+        self.my_list.insert_head(Node(6))
+        self.my_list.insert_tail(Node(-2))
+        self.my_list.insert_tail(Node(109))
+        self.my_list.insert_tail(Node(-10))
+        
 
-# Dodawanie elementów na różne sposoby
-node1 = Node(10)
-node2 = Node(20)
-node3 = Node(30)
+    def test_inserts(self):
+        self.assertEqual(str(self.my_list), "6->3->1->22->-2->109->-10")
 
-my_list.insert_head(node1)
-my_list.insert_tail(node2)
-my_list.insert_tail(node3)
+    def test_search(self):
+        searched_node1 = self.my_list.search(22)
+        self.assertEqual(searched_node1, self.node1)
+        searched_node2 = self.my_list.search(100)
+        self.assertEqual(searched_node2, None)
 
-# Wyświetlanie listy
-print("Initial list:", my_list)
+    def test_find_max(self):
+        max_node = self.my_list.find_max()
+        self.assertEqual(max_node.data, 109)
 
-# Szukanie elementu
-searched_node = my_list.search(20)
-if searched_node:
-    print("Found node:", searched_node)
-else:
-    print("Node not found")
+    def test_find_min(self):
+        min_node = self.my_list.find_min()
+        self.assertEqual(min_node.data, -10)
 
-# Znajdowanie maksimum i minimum
-max_node = my_list.find_max()
-min_node = my_list.find_min()
+    def test_reverse(self):
+        self.my_list.reverse()
+        self.assertEqual(str(self.my_list), "-10->109->-2->22->1->3->6")
 
-print("Max node:", max_node)
-print("Min node:", min_node)
-
-# Odwracanie listy
-my_list.reverse()
-print("Reversed list:", my_list)
+if __name__ == '__main__':
+    unittest.main()
