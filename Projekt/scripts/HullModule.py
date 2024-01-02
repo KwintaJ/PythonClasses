@@ -9,3 +9,5 @@
 from points import Point
 from vectors import Vector
 
+class ConvexHull:
+    
