@@ -20,7 +20,8 @@ class TestConvexHull(unittest.TestCase):
     def test0(self):
         pass
 
-    def tearDown(self): pass
+    def tearDown(self): 
+        pass
 
 if __name__ == '__main__':
     unittest.main()
