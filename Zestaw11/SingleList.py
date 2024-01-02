@@ -2,8 +2,9 @@
 #                                   #
 #  Zestaw 11            02.01.2024  #
 #                                   #
-#          Zadanie 11.2             #
-#     Plik z klasa SingleList       #
+#           Zadanie 11.2            #
+#       Plik z implementacja        #
+#         klasy SingleList          #
 #                                   #
 #  Jan Kwinta                       #
 #                                   #
