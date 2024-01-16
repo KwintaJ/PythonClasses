@@ -1,3 +1,15 @@
+#####################################
+#                                   #
+#  Zestaw 12            16.01.2024  #
+#                                   #
+#           Zadanie 12.8            #
+#       Plik z implementacja        #
+#          kolejki losowej          #
+#                                   #
+#  Jan Kwinta                       #
+#                                   #
+#####################################
+
 class RandomQueue:
     def __init__(self): pass
     #def __init__(self, size=10): pass   # wersja z ograniczeniem na rozmiar
