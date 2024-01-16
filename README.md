@@ -11,4 +11,5 @@ Programy realizowane w ramach kursu Język Python prowadzonego w semestrze zimow
 **Zestaw 07:** wyjątki i iteratory  
 **Zestaw 08:** dekoratory i metaklasy  
 **Zestaw 11:** struktury danych, listy wiązane  
+**Zestaw 12:** abstrakcyjne struktury danych: kolejki  
 **Projekt:** wyznaczanie otoczki wypukłej zbioru punktów  
