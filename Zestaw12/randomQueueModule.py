@@ -33,7 +33,7 @@ class RandomQueue:
         return len(self.queue) == 0
 
     def is_full(self):
-        return self.sizeLimit is not None and len(self.queue) == self.size_limit
+        return self.sizeLimit is not None and len(self.queue) == self.sizeLimit
 
     def clear(self):
         self.queue = []
