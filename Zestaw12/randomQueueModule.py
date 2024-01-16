@@ -26,7 +26,8 @@ class RandomQueue:
         if self.is_empty():
             raise ValueError("Queue is empty")
         index = random.randint(0, len(self.queue) - 1)
-        return self.queue.pop(index)
+        self.queue[index], self.queue[-1] = self.queue[-1], self.queue[index]
+        return self.queue.pop()
 
     def is_empty(self):
         return len(self.queue) == 0
