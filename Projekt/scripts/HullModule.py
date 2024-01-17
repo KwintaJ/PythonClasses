@@ -3,6 +3,7 @@
 #                                    #
 #        Projekt zaliczeniowy        #
 #       Plik z klasa ConvexHull      #
+#          Algorytm Grahama          #
 #                                    #
 ######################################
 
