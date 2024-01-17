@@ -21,3 +21,6 @@ class Vector:
 
     def __ne__(self, other):
         return not self == other
+        
+    def cross(self, other):
+        return (self.pointB.x - self.pointA.x) * (other.pointB.y - other.pointA.y) - (self.pointB.y - self.pointA.y) * (other.pointB.x - other.pointA.x)
