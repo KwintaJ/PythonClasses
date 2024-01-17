@@ -1,4 +1,14 @@
-
+#####################################
+#                                   #
+#  Zestaw 12            16.01.2024  #
+#                                   #
+#           Zadanie 12.2            #
+#       Plik z implementacja        #
+#          tablicowa stosu          #
+#                                   #
+#  Jan Kwinta                       #
+#                                   #
+#####################################
 
 class Stack:
     def __init__(self, size=10):
