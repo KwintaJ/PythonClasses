@@ -29,6 +29,9 @@ class ConvexHull:
             while len(hull) > 1 and (Vector(hull[-2], hull[-1]).cross(Vector(hull[-2], point)) <= 0):
                 hull.pop()
             hull.append(point)
+            
+        if hull[0] == hull[1]:
+            hull.pop(0)
 
         return hull
     
