@@ -10,14 +10,7 @@
 # coding = utf-8
 from points import Point
 from HullModule import ConvexHull
-
-def read_points_from_file(file_path):
-    points = []
-    with open(file_path, 'r') as file:
-        for line in file:
-            x, y = map(float, line.split())
-            points.append(Point(x, y))
-    return points
+from ReadPointsFileModule import read_points_from_file
 
 def test_convex_hull(input_path, expected_output_path):
     points_list = read_points_from_file(input_path)
@@ -32,7 +25,7 @@ def test_convex_hull(input_path, expected_output_path):
     return hull_points == expected_output
 
 if __name__ == "__main__":
-    for i in range(10):
+    for i in range(11):
         input_file_path = f'../tests/in/{i}.in'
         output_file_path = f'../tests/out/{i}.out'
 
