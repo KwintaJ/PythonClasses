@@ -33,8 +33,8 @@ def test_convex_hull(input_path, expected_output_path):
 
 if __name__ == "__main__":
     for i in range(10):
-        input_file_path = f'/../tests/in/{i}.in'
-        output_file_path = f'/../tests/out/{i}.out'
+        input_file_path = f'../tests/in/{i}.in'
+        output_file_path = f'../tests/out/{i}.out'
 
         if test_convex_hull(input_file_path, output_file_path):
             print(f'Test {i}: PASS')
