@@ -4,30 +4,32 @@
 #############################################################################
 
 
-=============================================================================
+====================================================================================================
 *Zawartosc projektu*
 
-Projekt/─┐                                | Folder glowny
-         ├─scripts/─┐                     | Podfolder ze skryptami
-         │          ├─ points.py          | Plik z modulem Point
-         │          ├─ vectors.py         | Plik z modulem Vector
-         │          ├─ HullModule.py      | Plik z klasa wyznaczajaca otoczke
-         │          ├─ StdInOut.py        | Plik do obslugi klasy ConvexHull
-         │          └─ tester.py          | Plik do testowania ConvexHull.py
-         │                                |
-         └─tests/───┐                     | Folder z testami
-                    ├─in/──┐              | | Folder z danymi wejsciowymi
-                    │      ├─ 0.in        | | |
-                    │      ├─ 1.in        | | | Pliki z przygotowanymi 
-                    │      ├─ 2.in        | | | danymi wejsciowymi programu
-                    │      └─ ...         | | | (rozne zbiory punktow)
-                    │                     | |
-                    └─out/─┐              | | Folder z wynikami
-                           ├─ 0.out       | | |
-                           ├─ 1.out       | | | Pliki z wzorcowymi 
-                           ├─ 2.out       | | | odpowiedziami to testowania
-                           └─ ...         | | | programu
-=============================================================================
+Projekt/─┐                                         | Folder glowny
+         ├─scripts/─┐                              | Podfolder ze skryptami
+         │          ├─ points.py                   | Plik z modulem Point
+         │          ├─ vectors.py                  | Plik z modulem Vector         
+         │          ├─ HullModule.py               | Plik z klasa wyznaczajaca otoczke
+         │          ├─ StdInOut.py                 | Plik do obslugi klasy ConvexHull
+         │          ├─ ReadPointsFileModule.py     | Plik do obslugi plikow
+         │          ├─ PlotPoints.py               | Program wyswietlajacy otoczke wypukla
+         │          └─ tester.py                   | Plik do testowania ConvexHull.py
+         │                                         |
+         └─tests/───┐                              | Folder z testami
+                    ├─in/──┐                       | | Folder z danymi wejsciowymi
+                    │      ├─ 0.in                 | | |
+                    │      ├─ 1.in                 | | | Pliki z przygotowanymi 
+                    │      ├─ 2.in                 | | | danymi wejsciowymi programu
+                    │      └─ ...                  | | | (rozne zbiory punktow)
+                    │                              | |
+                    └─out/─┐                       | | Folder z wynikami
+                           ├─ 0.out                | | |
+                           ├─ 1.out                | | | Pliki z wzorcowymi 
+                           ├─ 2.out                | | | odpowiedziami to testowania
+                           └─ ...                  | | | programu
+====================================================================================================
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
