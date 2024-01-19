@@ -1,3 +1,12 @@
+######################################
+#  Jan Kwinta            02.01.2024  #
+#                                    #
+#        Projekt zaliczeniowy        #
+#     Plik do wyrysowania otoczki    #
+#       wypuklej na plaszczyznie     #
+#                                    #
+######################################
+
 import matplotlib.pyplot as plt
 from points import Point
 from HullModule import ConvexHull
