@@ -21,12 +21,12 @@ def plot_points(points, hull_points):
     hull_x = [point.x for point in hull_points]
     hull_y = [point.y for point in hull_points]
 
-    plt.scatter(hull_x, hull_y, color='green', label='Otoczka wypukła')
+    plt.scatter(hull_x, hull_y, color='green', label='Otoczka')
 
     plt.xlabel('X')
     plt.ylabel('Y')
-    plt.title('Punkty na płaszczyźnie z otoczką wypukłą')
-    plt.legend()
+    plt.title('Otoczka wypukla na plaszczyznie')
+#   plt.legend()
     plt.show()
 
 if __name__ == "__main__":
