@@ -54,4 +54,9 @@ Aby przetestowac klase ConvexHull na danych znajdujacych sie w folderze tests
 trzeba wykonac komende:
     python3 tester.py
 
+
+Aby wyswietlic polozenie punktow na plaszczyznie z zaznaczona otoczka 
+wypukla nalezy wykonac:
+         python3 PlotPoints.py
+Do uruchomienia tego programu wymagana jest biblioteka matplotlib
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
