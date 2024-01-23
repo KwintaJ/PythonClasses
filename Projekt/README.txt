@@ -47,8 +47,6 @@ Aby uruchomic program nalezy wykonac komende:
 a nastepnie podac zbior punktow w postaci ciagu par liczb.
 
 
-
-
 Aby przetestowac klase ConvexHull na danych znajdujacych sie w folderze tests 
 trzeba wykonac komende:
     python3 tester.py
@@ -59,3 +57,10 @@ wypukla nalezy wykonac:
          python3 PlotPoints.py
 Do uruchomienia tego programu wymagana jest biblioteka matplotlib
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+--------------------------------------------------------------------------------
+*Opis algorytmu*
+
+Algorytm Grahama 
+
+--------------------------------------------------------------------------------
