@@ -12,7 +12,8 @@ from HullModule import ConvexHull
 
 def read_points_from_input():
     points = []
-    print("Podaj pary liczb (x, y) oddzielone spacja. Wpisz 'koniec', aby zakonczyc:")
+    print("Podaj pary liczb (x, y) oddzielone spacja. 
+           Wpisz 'koniec', aby zakonczyc:")
 
     while True:
         input_str = input()
