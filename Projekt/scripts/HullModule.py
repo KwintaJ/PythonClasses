@@ -21,12 +21,15 @@ class ConvexHull:
             return self.pointsList  
         
         pivot = min(self.pointsList, key=lambda p: (p.y, p.x))
-        sorted_points = sorted(self.pointsList, key=lambda p: (atan2(p.y - pivot.y, p.x - pivot.x), p))
+        sorted_points = sorted(self.pointsList, 
+                               key=lambda p: (atan2(p.y - pivot.y, 
+                                              p.x - pivot.x), p))
 
         hull = [pivot, sorted_points[0], sorted_points[1]]
 
         for point in sorted_points[2:]:
-            while len(hull) > 1 and (Vector(hull[-2], hull[-1]).cross(Vector(hull[-2], point)) <= 0):
+            while len(hull) > 1 and 
+            (Vector(hull[-2], hull[-1]).cross(Vector(hull[-2], point)) <= 0):
                 hull.pop()
             hull.append(point)
             
