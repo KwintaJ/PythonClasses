@@ -63,6 +63,17 @@ Do uruchomienia tego programu wymagana jest biblioteka matplotlib
 *Opis algorytmu*
 
 W moim projekcie do wyznaczania otoczki wypuklej klasa ConvexHull uzywa
-algorytmu Grahama. Agorytm Grahama 
+algorytmu Grahama. Agorytm Grahama to efektywny algorytm wyszukiwania otoczki
+wypuklej skonczonego zbioru punktow na plaszczyznie  dzialajacy w czasie 
+O(n log(n)), gdzie n jest liczba punktow w zbiorze.
+
+Przebieg algorytmu jest nastepujący:
+
+
+Referencje:
+Ronald Graham. An efficient algorithm for determining the convex hull of a
+finite planar set. „Information Processing Letters”. 1, s. 132–133, 1972. (ang.)
+
+wikipedia: https://pl.wikipedia.org/wiki/Algorytm_Grahama
 
 --------------------------------------------------------------------------------
