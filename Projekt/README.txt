@@ -58,9 +58,11 @@ wypukla nalezy wykonac:
 Do uruchomienia tego programu wymagana jest biblioteka matplotlib
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
 --------------------------------------------------------------------------------
 *Opis algorytmu*
 
-Algorytm Grahama 
+W moim projekcie do wyznaczania otoczki wypuklej klasa ConvexHull uzywa
+algorytmu Grahama. Agorytm Grahama 
 
 --------------------------------------------------------------------------------
