@@ -72,8 +72,8 @@ Przebieg algorytmu jest nastepujący:
 
 
 Referencje:
-Ronald Graham. An efficient algorithm for determining the convex hull of a
-finite planar set. „Information Processing Letters”. 1, s. 132–133, 1972. (ang.)
+Ronald Graham - "An efficient algorithm for determining the convex hull of a
+finite planar set" - "Information Processing Letters"(1972), str. 132–133
 
 wikipedia: https://pl.wikipedia.org/wiki/Algorytm_Grahama
 
