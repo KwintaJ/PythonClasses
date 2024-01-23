@@ -21,7 +21,7 @@ def plot_points(points, hull_points):
     hull_x = [point.x for point in hull_points]
     hull_y = [point.y for point in hull_points]
 
-    plt.scatter(hull_x, hull_y, color='green', label='Otoczka')
+    plt.scatter(hull_x, hull_y, color='red', label='Otoczka')
 
     plt.xlabel('X')
     plt.ylabel('Y')
