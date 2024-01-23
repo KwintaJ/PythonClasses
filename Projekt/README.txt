@@ -16,6 +16,7 @@ Projekt/─┐                               | Folder glowny
          │          ├─ PlotPoints.py     | Program wyswietlajacy otoczke wypukla
          │          └─ tester.py         | Plik do testowania ConvexHull.py
          │                               |
+         │                               |
          └─tests/───┐                    | Folder z testami
                     ├─in/──┐             | | Folder z danymi wejsciowymi
                     │      ├─ 0.in       | | |
