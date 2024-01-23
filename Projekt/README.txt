@@ -1,16 +1,15 @@
-#############################################################################
-#  Jan Kwinta                                                   02.01.2024  #
-#  Projekt zaliczeniowy Jezyk Python                       Otoczka wypukla  #
-#############################################################################
+################################################################################
+#  Jan Kwinta                                                      23.01.2024  #
+#  Projekt zaliczeniowy Jezyk Python                          Otoczka wypukla  #
+################################################################################
 
-
-====================================================================================================
+================================================================================
 *Zawartosc projektu*
 
 Projekt/─┐                                         | Folder glowny
          ├─scripts/─┐                              | Podfolder ze skryptami
          │          ├─ points.py                   | Plik z modulem Point
-         │          ├─ vectors.py                  | Plik z modulem Vector         
+         │          ├─ vectors.py                  | Plik z modulem Vector      
          │          ├─ HullModule.py               | Plik z klasa wyznaczajaca otoczke
          │          ├─ StdInOut.py                 | Plik do obslugi klasy ConvexHull
          │          ├─ ReadPointsFileModule.py     | Plik do obslugi plikow
@@ -29,7 +28,7 @@ Projekt/─┐                                         | Folder glowny
                            ├─ 1.out                | | | Pliki z wzorcowymi 
                            ├─ 2.out                | | | odpowiedziami to testowania
                            └─ ...                  | | | programu
-====================================================================================================
+================================================================================
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
