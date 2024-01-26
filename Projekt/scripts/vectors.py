@@ -23,7 +23,8 @@ class Vector:
         return not self == other
         
     def cross(self, other):
-        return (self.pointB.x - self.pointA.x) * 
-               (other.pointB.y - other.pointA.y) - 
-               (self.pointB.y - self.pointA.y) * 
-               (other.pointB.x - other.pointA.x)
+        A = (self.pointB.x - self.pointA.x)
+        B = (other.pointB.y - other.pointA.y)
+        C = (self.pointB.y - self.pointA.y)
+        D = (other.pointB.x - other.pointA.x)
+        return A * B - C * D
