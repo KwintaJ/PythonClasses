@@ -72,15 +72,18 @@ Przebieg algorytmu jest nastepujący:
   Na poczatku wybieramy punkt o najmniejszej rzednej; jezeli istnieje wiele 
 takich punktow wybieramy ten z nich ktory ma najmniejsza odcieta. 
 Oznaczmy ten punkt O.
-  Pozostale punkty P1, P1, P3... sortujemy wzgledem 1) kata wektora OPi do osi 
-poziomej oraz 2) dlugosci odcinka OPi.
-  Tworzymy liste dodajac na poczatek posortowanych punktow P punkt O.
-  Nastepnie wykonujemy powtarzajac
-    Bierzemy trzy poczatkowe jeszcze nieprzetworzone punkty z listy. Oznaczmy te
-trojke jako (A, B, C)
-    
-    
+  Pozostale punkty P1, P1, P3... sortujemy wzgledem 1) kata wektora OPi do 
+prostej prostopadlej do osi poziomej oraz 2) dlugosci odcinka OPi.
+  Nastepnie wykonujemy powtarzajac:
+    Bierzemy trzy jeszcze nieprzetworzone punkty z listy P1,... . Oznaczmy te
+trojke jako (A, B, C). Jesli B lezy na zewnatrz trojkata AOC to byc moze jest
+on czescia otoczki wypuklej - wtedy przechodzimy do kolejnego punktu z listy.
+Jezeli B lezy wewnatrz trojkata AOC to na pewno nie jest w otoczce i mozna 
+go usunac z listy i cofnac sie o jedna pozycje. 
 
+Sprawdzenie, czy punkt jest wewnatrz trojkata wykonujemy za pomoca sprawdzenia
+znaku iloczynu wektorowego wektorow AC i AB.
+    
 Referencje:
 Ronald Graham - "An efficient algorithm for determining the convex hull of a
 finite planar set" - "Information Processing Letters"(1972), str. 132–133
