@@ -28,7 +28,7 @@ class ConvexHull:
         hull = [pivot, sorted_points[0], sorted_points[1]]
 
         for point in sorted_points[2:]:
-            while len(hull) > 1 and 
+            while len(hull) > 1 and \
             (Vector(hull[-2], hull[-1]).cross(Vector(hull[-2], point)) <= 0):
                 hull.pop()
             hull.append(point)
